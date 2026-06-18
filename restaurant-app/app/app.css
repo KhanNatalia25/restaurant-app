@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Настройка кастомных цветов под нужды приложения. */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* Томатно-красная палитра (используется в шапке, акцентных кнопках, статусах заказов). */
+  --color-tom-thumb-50: #fff1ed;
+  --color-tom-thumb-100: #ffe0d6;
+  --color-tom-thumb-200: #ffc1ac;
+  --color-tom-thumb-400: #f08a6b;
+  --color-tom-thumb-600: #c84a2a;
+  --color-tom-thumb-700: #a83a20;
+  --color-tom-thumb-800: #7d2c19;
+  --color-tom-thumb-900: #4a1a0e;
+}
+
+html,
+body {
+  @apply bg-stone-50 text-stone-900;
+  font-family: var(--font-sans);
+}
